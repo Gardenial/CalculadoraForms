@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CalculadoraForms
 {
@@ -34,15 +35,30 @@ namespace CalculadoraForms
             return ConsultarOperacao -= num;
         }//fim do Método Subtrair
 
-        public double Multiplicar(double num)
+        public double Multiplicar(double bas, double exp)
         {
-            return ConsultarOperacao *= num;
+            return bas * exp;
         }//fim do Método Multiplicar
 
-        public double Divisao(double num)
+        public double Divisao(double bas, double exp)
         {
-            return ConsultarOperacao /= num;
+            return bas / exp;
         }//fim do Método Multiplicar
+
+        public double Potencia(double bas, double exp)
+        {
+          
+            return Math.Pow(bas, exp);
+        }//fim do Método Multiplicar
+
+
+        public double Raiz(double num)
+        {
+
+            return Math.Sqrt(num);
+
+        }//Fim da Raiz
+
 
 
     }//Fim da classe

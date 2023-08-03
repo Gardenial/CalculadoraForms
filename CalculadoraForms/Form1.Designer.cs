@@ -37,11 +37,15 @@
             this.divisao = new System.Windows.Forms.Button();
             this.textBoxResultado = new System.Windows.Forms.TextBox();
             this.labelResultado = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.Potencia = new System.Windows.Forms.Button();
+            this.Raiz = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // maskedTextBox1
             // 
             this.maskedTextBox1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maskedTextBox1.Location = new System.Drawing.Point(28, 193);
             this.maskedTextBox1.Mask = "00000000000000000000000000";
             this.maskedTextBox1.MaximumSize = new System.Drawing.Size(360, 26);
@@ -141,6 +145,45 @@
             this.labelResultado.Text = "resultado";
             this.labelResultado.Click += new System.EventHandler(this.labelResultado_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Teal;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(109, 310);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 47);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "/";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.divisao_Click);
+            // 
+            // Potencia
+            // 
+            this.Potencia.BackColor = System.Drawing.Color.Teal;
+            this.Potencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Potencia.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Potencia.Location = new System.Drawing.Point(28, 363);
+            this.Potencia.Name = "Potencia";
+            this.Potencia.Size = new System.Drawing.Size(75, 47);
+            this.Potencia.TabIndex = 5;
+            this.Potencia.Text = "Pot";
+            this.Potencia.UseVisualStyleBackColor = false;
+            this.Potencia.Click += new System.EventHandler(this.Potencia_Click);
+            // 
+            // Raiz
+            // 
+            this.Raiz.BackColor = System.Drawing.Color.Teal;
+            this.Raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Raiz.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Raiz.Location = new System.Drawing.Point(109, 363);
+            this.Raiz.Name = "Raiz";
+            this.Raiz.Size = new System.Drawing.Size(75, 47);
+            this.Raiz.TabIndex = 6;
+            this.Raiz.Text = "Raiz";
+            this.Raiz.UseVisualStyleBackColor = false;
+            this.Raiz.Click += new System.EventHandler(this.Raiz_Click);
+            // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 19F);
@@ -149,7 +192,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(400, 544);
+            this.Controls.Add(this.Raiz);
+            this.Controls.Add(this.Potencia);
             this.Controls.Add(this.textBoxResultado);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.divisao);
             this.Controls.Add(this.multiplicacao);
             this.Controls.Add(this.subtracao);
@@ -181,6 +227,9 @@
         private System.Windows.Forms.Button divisao;
         private System.Windows.Forms.TextBox textBoxResultado;
         private System.Windows.Forms.Label labelResultado;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Potencia;
+        private System.Windows.Forms.Button Raiz;
     }
 }
 
